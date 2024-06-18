@@ -39,7 +39,7 @@ def main() -> None:
                     ask_character("Moon")
             elif ask_yes("Did your character made an entire website?"):
                 ask_character("Naviary")
-            elif ask_character("Is your character Swedish"):
+            elif ask_yes("Is your character Swedish"):
                 ask_character("EitiFrie")
             else:
                 ask_character("Zell")
@@ -51,7 +51,7 @@ def main() -> None:
                     ask_character("ChessGuyyy")
             elif ask_yes("Is your character Swedish?"):
                 ask_character("Jonathan")
-            elif ask_yes("Is your character Turkish?"):
+            else:
                 ask_character("Mehball")
         else:
             ask_character("bareth")
