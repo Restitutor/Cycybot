@@ -29,7 +29,10 @@ def main() -> None:
         if ask_yes("Does your character has more than 100 subscribers?"):
             if ask_yes("Is your character part of CyHub?"):
                 if ask_yes("Does your character play chess?"):
-                    ask_character("Syntax")
+                    if ask_yes("Was the character's account hacked?"):
+                        ask_character("Zell")
+                    else:
+                        ask_character("Syntax")
                 else:
                     ask_character("Allen")
             elif ask_yes("Does your character make fotd's?"):
@@ -39,10 +42,8 @@ def main() -> None:
                     ask_character("Moon")
             elif ask_yes("Did your character made an entire website?"):
                 ask_character("Naviary")
-            elif ask_yes("Is your character Swedish"):
-                ask_character("EitiFrie")
             else:
-                ask_character("Zell")
+                ask_character("EitiFrie")
         elif ask_yes("Is you character European?"):
             if ask_yes("Does your character play chess?"):
                 if ask_yes("Is your character Hungarian?"):
