@@ -62,10 +62,7 @@ def main() -> None:
         else:
             ask_character("NonAccounter")
     elif ask_yes("Is your character part of MoonGuyyy's server?"):
-        if ask_yes("Does your character code?"):
-            ask_character("Restitutor")
-        else:
-            ask_character("Robadog")
+        ask_character("Restitutor")
     elif ask_yes("Is your character Turkish?"):
         ask_character("AncasTier")
     else:

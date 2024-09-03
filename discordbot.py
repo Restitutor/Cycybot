@@ -57,7 +57,7 @@ async def on_message(message):
         logging.exception(e)  # Invalid response. Skip.
     else:
         if not output:
-            output = "You found a bug! Tell Res and Moon"
+            output = "You found a bug! Tell Res and ChessGuyyy"
             del all_state[user]
         await message.reply(output)
 
