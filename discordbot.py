@@ -61,7 +61,7 @@ async def on_message(message):
             del all_state[user]
         await message.reply(output)
     
-    if "updatebot" in text:
+    if "updatebot1" in text:
         if user in ADMINS:
             status = await run_git_pull()
             await message.reply("Checked for updates.\n" + status)
