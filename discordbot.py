@@ -60,7 +60,11 @@ async def on_message(message):
             output = "You found a bug! Tell Res and ChessGuyyy"
             del all_state[user]
         await message.reply(output)
-
+    
+    if "updatebot" in text:
+        if user in ADMINS:
+            status = await run_git_pull()
+            await message.reply("Checked for updates.\n" + status)
 
 @bot.event
 async def on_ready():
