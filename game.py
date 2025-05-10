@@ -20,7 +20,7 @@ def ask_character(name: str) -> None:
 
 def main() -> None:
     # Friend Guesser
-    print("Welcome, I'm AkinatorGuyyy! \U0001F9DE")
+    print("Welcome, I'm AkinatorGuyyy! \U0001f9de")
     print("Today I will manage to guess your friend! (As long as cycy added them!)")
     print("Please answer the following questions with 'yes' or 'no'")
 
@@ -49,7 +49,10 @@ def main() -> None:
                 ask_character("EitiFrie")
         elif ask_yes("Is you character European?"):
             if ask_yes("Does your character play chess?"):
-                ask_character("ChessGuyyy")
+                if ask_yes("Is your character Hungarian?"):
+                    ask_character("Who am I")
+                else:
+                    ask_character("ChessGuyyy")
             elif ask_yes("Is your character Swedish?"):
                 ask_character("Jonathan")
             else:
@@ -70,5 +73,7 @@ def main() -> None:
         ask_character("AncasTier")
     else:
         ask_character("Sagoram/Blank")
+
+
 if __name__ == "__main__":
     main()

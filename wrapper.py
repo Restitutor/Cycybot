@@ -1,6 +1,6 @@
 import asyncio
-from asyncio.subprocess import PIPE
 import os
+from asyncio.subprocess import PIPE
 from typing import Generator
 
 
@@ -22,7 +22,7 @@ async def interact_with_process(path: str) -> Generator[str, str, None]:
     # Start the subprocess
     assert os.path.isfile(path)
     process = await asyncio.create_subprocess_exec(
-        "python", path, stdin=PIPE, stdout=PIPE
+        "python3", path, stdin=PIPE, stdout=PIPE,
     )
 
     stdout = await read_lines(process.stdout)

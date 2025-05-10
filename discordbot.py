@@ -1,16 +1,18 @@
 #!/home/onfim/no_sync/TTS/venv/bin/python
 #!/usr/bin/env python3
-from collections import defaultdict
-import discord
-import re
-from wrapper import interact_with_process
-from typing import AsyncGenerator
 import logging
+import re
+from collections import defaultdict
+from typing import AsyncGenerator
+
+import discord
+
+from wrapper import interact_with_process
 
 bot = discord.Bot(
     intents=discord.Intents.none()
     | discord.Intents.message_content
-    | discord.Intents.guild_messages
+    | discord.Intents.guild_messages,
 )
 
 all_state = defaultdict(str)
